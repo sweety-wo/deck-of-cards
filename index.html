@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deck Of Cards</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<h1>Deck Of Cards</h1>
+
+<label>Deck:</label>
+<select onchange="fnChangeDecks(this.value)">
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+</select>
+<button onclick="fnShuffle();">Shuffle & Spread</button>
+<button onclick="fnSortByRank();">Sort By Rank</button>
+<button onclick="fnSortBySuit();">Sort By Suit</button>
+<hr/>
+<div id="display-cards" class="display-cards"></div>
+
+<script type="text/javascript" src="js/cards.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
